@@ -86,6 +86,12 @@ class ViewController: UIViewController {
         result.text = ""
         flag = 5
     }
+    @IBAction func pm(_ sender: Any) {
+        temp = Double(result.text!)!
+        temp = -temp
+        input.text = input.text!
+        result.text = ""
+    }
     @IBAction func buttonResult(_ sender: Any) {
         if flag == 1{
             temp = temp + Double(result.text!)!
