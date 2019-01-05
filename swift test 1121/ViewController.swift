@@ -57,25 +57,45 @@ class ViewController: UIViewController {
         result.text = result.text! + "."
     }
     @IBAction func buttonAdd(_ sender: Any) {
-        temp = Double(result.text!)!
+        if flag == 0{
+            temp = Double(result.text!)!
+        }
+        else if flag == 1{
+            temp = temp + Double(result.text!)!
+        }
         input.text = input.text! + "+"
         result.text = ""
         flag = 1
     }
     @IBAction func buttonMinus(_ sender: Any) {
-        temp = Double(result.text!)!
+        if flag == 0{
+            temp = Double(result.text!)!
+        }
+        else if flag == 2{
+            temp = temp - Double(result.text!)!
+        }
         input.text = input.text! + "-"
         result.text = ""
         flag = 2
     }
     @IBAction func buttonMultiply(_ sender: Any) {
-        temp = Double(result.text!)!
+        if flag == 0{
+            temp = Double(result.text!)!
+        }
+        else if flag == 3{
+            temp = temp * Double(result.text!)!
+        }
         input.text = input.text! + "×"
         result.text = ""
         flag = 3
     }
     @IBAction func buttonDivide(_ sender: Any) {
-        temp = Double(result.text!)!
+        if flag == 0{
+            temp = Double(result.text!)!
+        }
+        else if flag == 4{
+            temp = temp / Double(result.text!)!
+        }
         input.text = input.text! + "÷"
         result.text = ""
         flag = 4
@@ -85,12 +105,6 @@ class ViewController: UIViewController {
         input.text = input.text! + "%"
         result.text = ""
         flag = 5
-    }
-    @IBAction func pm(_ sender: Any) {
-        temp = Double(result.text!)!
-        temp = -temp
-        input.text = input.text!
-        result.text = ""
     }
     @IBAction func buttonResult(_ sender: Any) {
         if flag == 1{
@@ -109,8 +123,10 @@ class ViewController: UIViewController {
             temp = temp *  0.01 * Double(result.text!)!
         }
         result.text="\(temp)"
+        flag = 0
     }
     @IBAction func buttonAC(_ sender: Any) {
+        temp = 0
         result.text = ""
         input.text = ""
     }
