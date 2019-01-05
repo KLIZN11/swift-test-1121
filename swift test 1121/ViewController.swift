@@ -63,6 +63,15 @@ class ViewController: UIViewController {
         else if flag == 1{
             temp = temp + Double(result.text!)!
         }
+        else if flag == 2{
+            temp = temp - Double(result.text!)!
+        }
+        else if flag == 3{
+            temp = temp * Double(result.text!)!
+        }
+        else if flag == 4{
+            temp = temp / Double(result.text!)!
+        }
         input.text = input.text! + "+"
         result.text = ""
         flag = 1
@@ -71,8 +80,17 @@ class ViewController: UIViewController {
         if flag == 0{
             temp = Double(result.text!)!
         }
+        else if flag == 1{
+            temp = temp + Double(result.text!)!
+        }
         else if flag == 2{
             temp = temp - Double(result.text!)!
+        }
+        else if flag == 3{
+            temp = temp * Double(result.text!)!
+        }
+        else if flag == 4{
+            temp = temp / Double(result.text!)!
         }
         input.text = input.text! + "-"
         result.text = ""
@@ -82,8 +100,17 @@ class ViewController: UIViewController {
         if flag == 0{
             temp = Double(result.text!)!
         }
+        else if flag == 1{
+            temp = temp + Double(result.text!)!
+        }
+        else if flag == 2{
+            temp = temp - Double(result.text!)!
+        }
         else if flag == 3{
             temp = temp * Double(result.text!)!
+        }
+        else if flag == 4{
+            temp = temp / Double(result.text!)!
         }
         input.text = input.text! + "×"
         result.text = ""
@@ -92,6 +119,15 @@ class ViewController: UIViewController {
     @IBAction func buttonDivide(_ sender: Any) {
         if flag == 0{
             temp = Double(result.text!)!
+        }
+        else if flag == 1{
+            temp = temp + Double(result.text!)!
+        }
+        else if flag == 2{
+            temp = temp - Double(result.text!)!
+        }
+        else if flag == 3{
+            temp = temp * Double(result.text!)!
         }
         else if flag == 4{
             temp = temp / Double(result.text!)!
@@ -120,7 +156,7 @@ class ViewController: UIViewController {
             temp = temp / Double(result.text!)!
         }
         if flag == 5{
-            temp = temp *  0.01 * Double(result.text!)!
+            temp = temp *  0.01
         }
         result.text="\(temp)"
         flag = 0
