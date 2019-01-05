@@ -60,16 +60,16 @@ class ViewController: UIViewController {
         if flag == 0{
             temp = Double(result.text!)!
         }
-        else if flag == 1{
+        if flag == 1{
             temp = temp + Double(result.text!)!
         }
-        else if flag == 2{
+        if flag == 2{
             temp = temp - Double(result.text!)!
         }
-        else if flag == 3{
+        if flag == 3{
             temp = temp * Double(result.text!)!
         }
-        else if flag == 4{
+        if flag == 4{
             temp = temp / Double(result.text!)!
         }
         input.text = input.text! + "+"
@@ -80,16 +80,16 @@ class ViewController: UIViewController {
         if flag == 0{
             temp = Double(result.text!)!
         }
-        else if flag == 1{
+        if flag == 1{
             temp = temp + Double(result.text!)!
         }
-        else if flag == 2{
+        if flag == 2{
             temp = temp - Double(result.text!)!
         }
-        else if flag == 3{
+        if flag == 3{
             temp = temp * Double(result.text!)!
         }
-        else if flag == 4{
+        if flag == 4{
             temp = temp / Double(result.text!)!
         }
         input.text = input.text! + "-"
@@ -100,16 +100,16 @@ class ViewController: UIViewController {
         if flag == 0{
             temp = Double(result.text!)!
         }
-        else if flag == 1{
+        if flag == 1{
             temp = temp + Double(result.text!)!
         }
-        else if flag == 2{
+        if flag == 2{
             temp = temp - Double(result.text!)!
         }
-        else if flag == 3{
+        if flag == 3{
             temp = temp * Double(result.text!)!
         }
-        else if flag == 4{
+        if flag == 4{
             temp = temp / Double(result.text!)!
         }
         input.text = input.text! + "×"
@@ -120,16 +120,16 @@ class ViewController: UIViewController {
         if flag == 0{
             temp = Double(result.text!)!
         }
-        else if flag == 1{
+        if flag == 1{
             temp = temp + Double(result.text!)!
         }
-        else if flag == 2{
+        if flag == 2{
             temp = temp - Double(result.text!)!
         }
-        else if flag == 3{
+        if flag == 3{
             temp = temp * Double(result.text!)!
         }
-        else if flag == 4{
+        if flag == 4{
             temp = temp / Double(result.text!)!
         }
         input.text = input.text! + "÷"
@@ -170,7 +170,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
 }
-
